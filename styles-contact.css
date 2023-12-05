@@ -1,0 +1,169 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/prettyflowersdarkened-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.center {
+    width: 40%; /* ------ This is for responsiveness ------ */
+	min-width: 300px; /* ------- This is for responsiveness ------ */
+	max-width: 1200px;
+	padding: 2%;
+    margin: 150px auto;
+ 	background: rgba(243, 208, 240, 0.75); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	/*border: 3px dashed white;*/
+	border-style: double;
+	border-color: aliceblue;
+	border-width: 10px;
+	border-radius: 3%;
+
+/* ------- This is my fade in code ---------*/
+	animation: fadeIn ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+	}
+/* ------- End of my fade in code ----------*/
+
+   
+#logo {
+	width: 50%; /* ------ This is for responsiveness ------*/
+    margin-bottom: 16px;
+	margin-top: 16px;
+	/*border: 3px dashed rgb(121, 98, 204);*/
+	text-align: center;
+}
+
+h1 {
+	font-family: "brevia", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 2.5em;
+    margin: 30px auto 10px auto;
+    color: #fff;
+}
+
+h2 {
+	font-family: "brevia", sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-top: 5px;
+    line-height: 1.4;
+    color: #fff;
+    padding: 0px 0px;
+    margin: -5px auto 10px auto;
+}
+
+p {
+	font-family: "brevia", sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+    line-height: 1.6;
+    color: #fff;
+	margin-top: 20px; /*--this moves it down more from the h2--*/
+}
+nav{
+	font-family: 'brevia', sans-serif;
+	font-size: 1.2em;
+	width: 80%; /* ------ This is for responsiveness ------ */
+	margin: 0 auto; 
+	border: solid rgb(121, 98, 204);
+	border-width: 3px 0;
+	border-bottom: 0;
+	text-align: center;
+	margin-top: 2em;
+}    
+    
+nav li{
+	display: inline; 
+}
+
+nav a{
+	display: inline-block;
+	padding: 15px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+a:hover{
+	color: rgb(230, 105, 219);
+	background: rgb(243, 180, 222);
+	border: solid #ffffff;
+	border-width: 1.5px;
+	border-radius: 50%; /*---for circle shape border---*/
+	line-height: 0.6;
+}
